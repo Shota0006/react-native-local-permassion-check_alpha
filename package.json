@@ -1,6 +1,6 @@
 {
   "name": "@shota0006/react-native-local-permission-check_alpha",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A package to handle the local network permission after iOS 14",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
