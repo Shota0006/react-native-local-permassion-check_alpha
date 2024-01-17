@@ -6,8 +6,8 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const LocalPermissionCheck = NativeModules.LocalPermissionCheck
-  ? NativeModules.LocalPermissionCheck
+const LocalPermissionCheckAlpha = NativeModules.LocalPermissionCheckAlpha
+  ? NativeModules.LocalPermissionCheckAlpha
   : new Proxy(
       {},
       {
@@ -18,5 +18,5 @@ const LocalPermissionCheck = NativeModules.LocalPermissionCheck
     );
 
 export function check(): Promise<boolean> {
-  return LocalPermissionCheck.check();
+  return LocalPermissionCheckAlpha.check();
 }
